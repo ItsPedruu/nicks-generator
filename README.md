@@ -2,4 +2,4 @@
 
 <h1 align="center">Nicks Generator</h1>
 
-Nicks Generator is a website which takes word fractions and gives random understable nicknames. [Try it out](https://pedropinto.tech/nicks-generator/)
+Nicks Generator is a website which takes word fractions and gives random understandable nicknames. [Try it out](https://pedropinto.tech/nicks-generator/)
