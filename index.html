@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<!-- Title -->
+		<title>Nicks Generator</title>
+		
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/logo.png">
+		
+		<!-- Styles -->
+		<link href="css/index.css" rel="stylesheet">
+
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<script src="js/Constants.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="assets/banner.png">
+		</header>
+		<div class="generator">
+			<div class="information">
+				<h1>Nickname Here</h1>
+			</div>
+
+			<div class="inputs">
+				<div class="group">
+					<input type="text" id="additional-text">
+					<select id="additional-text-position">
+						<option value="beginning">Beginning</option>
+						<option value="end">End</option>
+					</select>
+				</div>
+				<div class="group">
+					<label for="letters">Letters <span id="tag" data-info="letters">3</span></label>
+					<input type="range" id="letters" min="3" max="8" step="1" value="3" data-info="letters" oninput="updateTag(this); startGenerator();">
+				</div>
+				<div class="group">
+					<label for="velocity">Velocity <span id="tag" data-info="velocity">1s</span></label>
+					<input type="range" id="velocity" min="1" max="5" step="1" value="1" data-info="velocity" oninput="updateTag(this); startGenerator();">
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button onclick="startGenerator()">Start</button>
+				<button onclick="stopGenerator()">Stop</button>
+				<button onclick="displayNickname(generateNickname(getLetters()))">Generate</button>
+				<button onclick="startGenerator(0.05)">Crazy Spin</button>
+				<button onclick="changeHistoryState(false)">History</button>
+			</div>
+		</div>
+
+		<div class="history">
+			<div class="background" onclick="changeHistoryState(true)"></div>
+			<div class="content"></div>
+		</div>
+	</body>
+</html>
