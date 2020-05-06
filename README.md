@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/itspedruu/the-deck-of-pain/master/assets/banner.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/itspedruu/nicks-generator/master/assets/banner.png"/></p>
 
 <h1 align="center">Nicks Generator</h1>
 
